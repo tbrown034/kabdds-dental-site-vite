@@ -6,7 +6,10 @@ import {
 } from "react-router-dom";
 import './index.css';
 import Index from "./routes/index";
+import ErrorPage from "./error-page";
 import { Location, About, Faqs, Financing, Root, Services, Contact } from "./routes";
+
+
 
 
 
@@ -15,6 +18,8 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <ErrorPage />,
+
     children: [
       { path: "", element: <Index /> },
       { path: "about", element: <About /> },
