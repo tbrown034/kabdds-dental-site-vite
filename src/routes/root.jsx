@@ -1,10 +1,16 @@
-const About = () => {
-    return (
-        <div>
-            <h1>About</h1>
-        </div>
-    )
+import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+import { Outlet } from "react-router-dom";
 
+export default function Root() {
+  return (
+    <>
+      <Header />
+      <div id="main">
+        <Outlet />
+      </div>
+      <Footer />
+    </>
+  );
 }
-
-export default About;
