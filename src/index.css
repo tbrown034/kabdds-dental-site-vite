@@ -40,6 +40,25 @@
   background-color: var(--quaternary-bg-color) !important;
 }
 
+.primary-color {
+  color: var(--primary-color)
+}
+
+.secondary-color {
+  color: var(--secondary-color)
+}
+
+.tertiary-color {
+  color: var(--tertiary-color)
+}
+
+.quad-color {
+
+    color: var(--quaternary-color)
+  }
+
+
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -78,6 +97,26 @@ button.ui.button {
 
 .default-padding {
   padding: 5%;
+}
+
+/* General HeroSection CSS */
+
+.heroOverlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroTitle {
+  font-size: 55px;
+}
+
+.heroText {
+  font-size: 35px;
+}
+
+.heroTopText {
+  font-size: 25px;
 }
 
 
