@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import Index from "./routes/index";
 import ErrorPage from "./error-page";
-import { Location, About, Faqs, Financing, Root, Services, Contact } from "./routes";
+import { Location, About, Faqs, Financing, Root, Services, Contact, Appointment } from "./routes";
 
 
 
@@ -30,6 +30,8 @@ const router = createBrowserRouter([
       { path: "faqs", element: <Faqs /> },
       { path: "location", element: <Location /> },
       { path: "services", element: <Services /> },
+      { path: "appointment", element: <Appointment /> },
+
     ],
   },
 ]);
