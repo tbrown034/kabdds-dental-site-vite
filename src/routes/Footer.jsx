@@ -19,14 +19,16 @@ import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 
 function Footer() {
-  const phoneNumber = "(630) 555-5555"
+  const phoneNumber = "(630) 555-5555";
+  const email = "kabdds@aol.com";
+  const facebookAddress = "https://www.facebook.com/KeithABrownDDS/";
   const handleClick = () => {
     const confirmed = window.confirm("Are you sure you want to call?");
     if (confirmed) {
       window.location.href = `tel:${phoneNumber}`;
     }
   };
-  
+
   return (
     <footer className="primary-bg-color default-padding">
       <Container fluid>
@@ -41,7 +43,7 @@ function Footer() {
             </div>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faPhone} className="icon" />
-              
+
               <a href="#" onClick={handleClick}>
                 <p>{phoneNumber}</p>
               </a>
@@ -49,12 +51,17 @@ function Footer() {
 
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faEnvelope} className="icon" />
-              <p>kabdds@aol.com</p>
+
+              <a href={`mailto:${email}`}>
+                <p>{email}</p>
+              </a>
             </div>
 
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faFacebook} className="icon" />
-              <p>Facebook</p>
+              <a href={`${facebookAddress}`}>
+                <p>Facebook</p>
+              </a>
             </div>
           </Col>
           <Col lg={3} xs={12} className="center-mobile-text">
@@ -80,25 +87,25 @@ function Footer() {
             <h5 className="underline">Dental Services</h5>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faTooth} className="icon" />
-              <Link to="/appointment">
+              <Link to="/services">
                 <p>General</p>
               </Link>
             </div>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faTeethOpen} className="icon" />
-              <Link to="/appointment">
+              <Link to="/services">
                 <p>Cosmetic</p>
               </Link>
             </div>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faKitMedical} className="icon" />
-              <Link to="/appointment">
+              <Link to="/services">
                 <p>Surgical and Emerency</p>
               </Link>
             </div>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faQuestion} className="icon" />
-              <Link to="/appointment">
+              <Link to="/faqs">
                 <p>Frequently Asked Questions</p>
               </Link>
             </div>
@@ -119,7 +126,7 @@ function Footer() {
             </div>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faBuilding} className="icon" />
-              <Link to="/appointment">
+              <Link to="/location">
                 <p>Our Location</p>
               </Link>{" "}
             </div>
