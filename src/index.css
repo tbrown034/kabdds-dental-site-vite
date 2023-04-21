@@ -14,10 +14,11 @@
   --tertiary-color: #cdd8de;
   --quaternary-color: #cdd6e1;
   background-color: rgba(237, 228, 228, 0.87);
-  --primary-bg-color: #f8fcfd;
+  --primary-bg-color: #dce3e5;
   --secondary-bg-color: #dfe7ec;
   --tertiary-bg-color: #f5f8f9;
   --quaternary-bg-color: #b3c7d3;
+
   /* Font Themes  */
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   --primary-font: "Lato", sans-serif;
@@ -26,6 +27,18 @@
 }
 
 /* Main Styles */ 
+.primary-bg-color {
+  background-color: var(--primary-bg-color) !important;
+}
+.secondary-bg-color {
+  background-color: var(--secondary-bg-color) !important;
+}
+.tertiary-bg-color {
+  background-color: var(--tertiary-bg-color) !important;
+}
+.quad-bg-color {
+  background-color: var(--quaternary-bg-color) !important;
+}
 
 a {
   font-weight: 500;
@@ -39,6 +52,10 @@ a:hover {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 button {
@@ -62,3 +79,52 @@ button:focus-visible {
  background-color: yellow;
 }
 
+.default-padding {
+  padding: 5%;
+}
+
+
+
+
+
+
+
+
+/* footer */
+
+.icon-and-text {
+  display: flex;
+  padding-top: 10px ;
+}
+
+.icon {
+  margin-right: 10px;
+  margin-top: 5px;
+
+
+}
+
+
+
+
+
+
+
+footer a {
+  color: #0a2745;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+footer a:hover {
+  color: #0056b3;
+}
+
+
+@media only screen and (max-width: 968px) {
+
+  .center-mobile-text {
+    padding: 0 20% 0 20%;
+    
+  }
+
+}
