@@ -1,7 +1,10 @@
+import HomeHero from "../components/pages/About/HeroSection"
+
 const About = () => {
     return (
         <div>
-            <h1>About</h1>
+
+            <HomeHero /> 
         </div>
     )
 
