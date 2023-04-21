@@ -13,24 +13,38 @@ import {
   faBuilding,
   faCalendarAlt,
   faMoneyBill,
-  faUserDoctor
+  faUserDoctor,
 } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 function Footer() {
+  const phoneNumber = "(630) 555-5555"
+  const handleClick = () => {
+    const confirmed = window.confirm("Are you sure you want to call?");
+    if (confirmed) {
+      window.location.href = `tel:${phoneNumber}`;
+    }
+  };
+  
   return (
     <footer className="primary-bg-color default-padding">
       <Container fluid>
-      <Row>
-          <Col  lg={3} xs={12} className="center-mobile-text">
+        <Row>
+          <Col lg={3} xs={12} className="center-mobile-text">
             <h5 className="underline">Connect With Us</h5>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />
-              <p>1295 Rickert Drive, Naperville, IL 60564</p>
+              <Link to="/location">
+                <p>1295 Rickert Drive, Naperville, IL 60564</p>
+              </Link>
             </div>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faPhone} className="icon" />
-              <p>555-555-5545</p>
+              
+              <a href="#" onClick={handleClick}>
+                <p>{phoneNumber}</p>
+              </a>
             </div>
 
             <div className="icon-and-text">
@@ -66,41 +80,55 @@ function Footer() {
             <h5 className="underline">Dental Services</h5>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faTooth} className="icon" />
-              <p>General</p>
+              <Link to="/appointment">
+                <p>General</p>
+              </Link>
             </div>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faTeethOpen} className="icon" />
-              <p>Cosmetic</p>
+              <Link to="/appointment">
+                <p>Cosmetic</p>
+              </Link>
             </div>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faKitMedical} className="icon" />
-              <p>Surgical and Emergency</p>
+              <Link to="/appointment">
+                <p>Surgical and Emerency</p>
+              </Link>
             </div>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faQuestion} className="icon" />
-              <p>FAQs</p>
+              <Link to="/appointment">
+                <p>Frequently Asked Questions</p>
+              </Link>
             </div>
           </Col>
-          <Col  lg={3} xs={12} className="center-mobile-text">
+          <Col lg={3} xs={12} className="center-mobile-text">
             <h5 className="underline">Explore</h5>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faUserDoctor} className="icon" />
-              <p>About Us</p>
+              <Link to="/about">
+                <p>About Us</p>
+              </Link>{" "}
             </div>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faMoneyBill} className="icon" />
-              <p>Financing</p>
+              <Link to="/financing">
+                <p>Financing</p>
+              </Link>{" "}
             </div>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faBuilding} className="icon" />
-              <p>Our Location</p>
+              <Link to="/appointment">
+                <p>Our Location</p>
+              </Link>{" "}
             </div>
-
-            
 
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faCalendarAlt} className="icon" />
-              <p>Make an Appointmetn</p>
+              <Link to="/appointment">
+                <p>Make an Appointment</p>
+              </Link>
             </div>
           </Col>
         </Row>
@@ -109,7 +137,6 @@ function Footer() {
         <p className="text-center ">
           Created by <a href="https://helloimtrevor.com/">TB Web & Design</a>
         </p>
-        
       </Container>
     </footer>
   );
