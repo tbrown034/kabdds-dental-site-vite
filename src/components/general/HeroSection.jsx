@@ -15,7 +15,7 @@ const HeroSection = ({
   return (
     <div className="quad-bg-color">
       <Card className="quad-bg-color">
-        <Card.Img src={backgroundImage} alt={altImage} />
+        <Card.Img className="heroCard" src={backgroundImage} alt={altImage} />
         <Card.ImgOverlay className="heroOverlay">
           {showTopText && (
             <div>

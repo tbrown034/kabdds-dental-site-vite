@@ -6,6 +6,7 @@ const AboutPage = () => {
   return (
     <div>
       <HeroSection
+        s
         backgroundImage={Photo}
         altImage="Two Doctors"
         title="Dr. Keith Brown DDS, FAGD"

@@ -18,7 +18,7 @@ const CallButton = () => {
 
   return (
     <>
-      <Button onClick={handleShow} animated="vertical" className='myButton'>
+      <Button onClick={handleShow} animated="vertical" >
         <Button.Content hidden>Call Us</Button.Content>
         <Button.Content visible>
           <Icon name="phone" />
