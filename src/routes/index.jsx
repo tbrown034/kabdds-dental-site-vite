@@ -11,9 +11,6 @@ export { default as Contact } from "./Contact";
 import HomeHero from "../components/pages/Home/HeroSection";
 import TextImageSection from "../components/pages/Home/TextImageSection";
 import IntroBanner from "../components/general/IntroBanner"
-import BannerText from "../components/pages/Home/BannerText";
-import ImageTextSection from "../components/pages/Home/ImageTextSection"
-import ReviewCarousel from "../components/pages/Home/ReviewCarousel";
 import ServicesBanner from "../components/pages/Home/ServicesBanner";
 import MapPackage from "../components/pages/Home/MapPackage";
 

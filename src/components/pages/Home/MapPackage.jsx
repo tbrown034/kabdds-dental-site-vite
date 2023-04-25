@@ -8,13 +8,13 @@ const myAddress = "1296 Rickert Drive, Suite 300, Naperville, IL 60540";
 const MapPackage = () => {
   return (
 
-      <div className="defaultPadding primaryColor">
+      <div className="default-padding primary-color">
         <Container fluid>
           <Row>
-            <Col className="leftImageContainer" xl="8">
-              <Map className="leftImage" />
+            <Col xl="8">
+              <Map  />
             </Col>
-            <Col className="textBox">
+            <Col>
               <h1>
               Located in the Heart of Napeville, IL.
               </h1>
@@ -24,7 +24,7 @@ const MapPackage = () => {
                 past 30 years. Come visit us!{" "}
               </p>
               <div className="btnGroup">
-                <Button id="directButton" animated>
+                <Button animated>
                   <Button.Content visible>
                     <Icon name="world" /> Get Directions
                   </Button.Content>
