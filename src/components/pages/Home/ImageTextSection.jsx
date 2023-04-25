@@ -4,7 +4,7 @@ import dentist from "../../../assets/images/Keith2.jpeg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTooth } from "@fortawesome/free-solid-svg-icons";
 
-const AboutExperience = () => (
+const ImageTextSection = () => (
   <div className="default-padding tertiary-bg-color">
     <Container fluid>
       <Row>
@@ -44,4 +44,4 @@ const AboutExperience = () => (
   </div>
 );
 
-export default AboutExperience;
+export default ImageTextSection;

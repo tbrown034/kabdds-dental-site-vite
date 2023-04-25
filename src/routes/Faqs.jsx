@@ -1,10 +1,10 @@
-import HomeHero from "../components/pages/About/HeroSection";
-import TextImageSection from "../components/pages/About/TextImageSection";
+import HomeHero from "../components/pages/Faqs/HeroSection";
+import TextImageSection from "../components/pages/Faqs/TextImageSection";
 import IntroBanner from "../components/general/IntroBanner"
-import BannerText from "../components/pages/About/BannerText";
-import ImageTextSection from "../components/pages/About/ImageTextSection"
+import BannerText from "../components/pages/Faqs/BannerText";
+import ImageTextSection from "../components/pages/Faqs/ImageTextSection"
 
-const About = () => {
+const Faqs = () => {
     return (
         <div>
             <HomeHero /> 
@@ -18,4 +18,4 @@ const About = () => {
 
 }
 
-export default About;
+export default Faqs;

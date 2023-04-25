@@ -8,11 +8,11 @@ export { default as Financing } from "./Financing";
 export { default as Root } from "./root";
 export { default as Services } from "./Services";
 export { default as Contact } from "./Contact";
-import HomeHero from "../components/pages/About/HeroSection";
-import TextImageSection from "../components/pages/About/TextImageSection";
+import HomeHero from "../components/pages/Home/HeroSection";
+import TextImageSection from "../components/pages/Home/TextImageSection";
 import IntroBanner from "../components/general/IntroBanner"
-import BannerText from "../components/pages/About/BannerText";
-import ImageTextSection from "../components/pages/About/ImageTextSection"
+import BannerText from "../components/pages/Home/BannerText";
+import ImageTextSection from "../components/pages/Home/ImageTextSection"
 
 
 

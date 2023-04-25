@@ -1,21 +1,23 @@
 import React from "react";
-import HeroSection from "../../../components/general/HeroSection"
-import Photo from "../../../assets/images/practice.jpeg"
+import HeroSectionDefault from "../../general/HeroSectionDefault"
+import Photo from "../../../assets/images/insurance.jpeg"
 
-const AboutPage = () => {
+const HeroSection = () => {
   return (
     <div>
-      <HeroSection
+      <HeroSectionDefault
         s
         backgroundImage={Photo}
-        altImage="Two Doctors"
-        title="Dr. Keith Brown DDS, FAGD"
-        subtitle="Dr. Brown is one of Chicagolands most experienced and dedicated dentists. With more than 40 years treating patients in Naperville, Il., he is a doctor you can trust."
-        showTopText={true}
+        altImage=""
+        title="Making Dental Care Affordable"
+        subtitle="We promise to give you the most affordable dental care we can offer.
+        We can also assist you in finding a financing program tailored to your
+        needs and budget."
+        showTopText={false}
         topText="Meet Your Next Dentist"
       />
     </div>
   );
 };
 
-export default AboutPage;
+export default HeroSection;

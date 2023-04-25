@@ -1,6 +1,7 @@
 import React from "react";
+import Photo from "../../../assets/images/dentist2.jpeg"
 import HeroSectionDefault from "../../general/HeroSectionDefault"
-import Photo from "../../../assets/images/appointment.webp"
+
 
 const HeroSection = () => {
   return (
@@ -8,11 +9,11 @@ const HeroSection = () => {
       <HeroSectionDefault
         backgroundImage={Photo}
         altImage=""
-        title="Schedule Your Next Appointment"
-        subtitle=" We are excited to see and help assist you. Your journey to a
-        healthier, brighter smile starts today!"
+        title="We'll Take Care of Your Teeth"
+        subtitle="Our goal is to have your teeth looking great and free of pain or
+        discomfort in as short a time as possible."
         showTopText={true}
-        topText="Meet Your Next Dentist"
+        topText="Our Services"
       />
     </div>
   );

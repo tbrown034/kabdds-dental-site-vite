@@ -1,17 +1,17 @@
 import React from "react";
+import Photo from "../../../assets/images/bank.jpeg"
 import HeroSectionDefault from "../../general/HeroSectionDefault"
-import Photo from "../../../assets/images/smile.jpeg"
+
 
 const HeroSection = () => {
   return (
     <div>
       <HeroSectionDefault
         backgroundImage={Photo}
-        altImage="Two Doctors"
-        title="Frequently Asked Questions"
-        subtitle="We promise to give you the most affordable dental care we can offer.
-        We can also assist you in finding a financing program tailored to
-        your needs and budget."
+        altImage=""
+        title="Your New Home for Dental Care"
+        subtitle="Located in the thrid floor of the Fifth Third Bank at 75th St. and
+        Rickert Drive in Naperville, Illinois"
         showTopText={false}
         topText="Meet Your Next Dentist"
       />

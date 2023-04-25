@@ -1,11 +1,12 @@
 import React from "react";
-import HeroSectionDefault from "../../general/HeroSectionDefault"
+import HeroSection from "../../general/HeroSectionDefault"
 import Photo from "../../../assets/images/practice.jpeg"
 
-const HeroSection = () => {
+const AboutPage = () => {
   return (
     <div>
-      <HeroSectionDefault
+      <HeroSection
+        s
         backgroundImage={Photo}
         altImage="Two Doctors"
         title="Dr. Keith Brown DDS, FAGD"
@@ -17,4 +18,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default AboutPage;
