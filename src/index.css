@@ -91,7 +91,7 @@ button.ui.button {
   }
   
   button.ui.button:hover {
-    background-color: var(--primary-bg-color);
+    background-color: var(--secondary-bg-color);
   }
 
 
@@ -165,16 +165,13 @@ button.ui.button {
   color: var(--secondary-color);
   background-color: var(--primary-bg-color);
   text-align: center;
-  padding: 25px;
   margin-top: 0;
   margin-bottom: 0;
   display: flex;
   flex-wrap: wrap;
 }
 
-.ui.horizontal.segments.heroSegment.secondaryColor {
-  background-color: var(--secondary-bg-color);
-}
+
 
 /* TextImageSection */
 
@@ -186,10 +183,20 @@ button.ui.button {
   object-fit: cover;
 }
 
+.rightImage {
+  padding: 0px 0px 0px 25px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 
 
 .textBox {
-
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
   background-color: var(--quaternary-bg-color);
 }
  
@@ -314,7 +321,7 @@ footer a:hover {
   }
 
 
-  /* TextImageSections */
+  /* TextImageSections and ImageText Sections*/
 
   .leftImageContainer {
     min-width: 1px;
@@ -336,3 +343,5 @@ footer a:hover {
 
   }
 }
+
+

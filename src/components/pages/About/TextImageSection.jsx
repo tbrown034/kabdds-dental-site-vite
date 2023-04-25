@@ -1,47 +1,27 @@
-import React from "react";
 import { Row, Col, Container, Image } from "react-bootstrap";
-import dentist from "../../../assets/images/Keith2.jpeg"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTooth } from "@fortawesome/free-solid-svg-icons";
+import family from "../../../assets/images/dad2.jpg"
 
-const AboutExperience = () => (
-  <div className="default-padding tertiary-bg-color">
-    <Container fluid>
-      <Row>
-        <Col className="leftImageContainer" lg="3" >
-          <Image className="leftImage" fluid="lg" src={dentist} />
-        </Col>
-        <Col className="textBox">
-            <div className="center-text">
-          <h1 >Experience You Can Trust</h1>
-          <FontAwesomeIcon
-            icon={faTooth}
-            size="8x"
-            className="icon fa-bounce bounceIcon"
-            style={{
-              animationDuration: "2s",
-              animationIterationCount: "1",
-            }}
-          />
-          </div>
-          <p>
-            Keith A. Brown DDS FAGD is an experienced dentist with over 42 years
-            of experience in the field. Since 1980, he has been providing
-            top-notch dental care to patients of all ages. Dr. Brown's passion
-            for dentistry is driven by his commitment to staying current with
-            the latest techniques and technology.
-          </p>
-          <p>
-            Dr. Brown earned his Doctor of Dental Surgery degree from Loyola
-            Dental School. Prior to that, he earned Bachelor of Arts degrees in
-            Chemistry and Biology from North Central College. A lifelong
-            Chicagoland residnet, Dr. Brown attended Naperville Central High
-            School and Fenger High School in the Southside of Chicago.
-          </p>
-        </Col>
-      </Row>
-    </Container>
-  </div>
-);
+const TextImageSection = () => {
+  return (
+    <div  className="default-padding tertiary-bg-color">
+      <Container fluid>
+        <Row>
+          <Col className="textBox default-padding" xl="6">
+            <h1>Outside the Office</h1>
+            <p>
+              When Dr. Brown is not helping his patients, he loves spending time
+              with much of time with his family, including his two children and
+              three granchldren. In addition to landscaping, he is also an avid
+              fisherman and a faithful Bears and Cubs fan.{" "}
+            </p>
+          </Col>
+          <Col className="rightImageContainer">
+            <Image fluid="md" className="rightImage" src={family} />
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  );
+};
 
-export default AboutExperience;
+export default TextImageSection;
