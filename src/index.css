@@ -201,8 +201,64 @@ button.ui.button {
 }
  
 
+/* Home  */
+
+.homeImage {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-left: var(--primary-bg-color) 10px solid;
+
+}
+
+.homeImageContainer {
+  padding-right: 0
+}
+
+/* Service Banner  */
+
+.cardPhoto {
+  filter: brightness(0.7);
+}
+
+.backCardPhoto {
+  filter: brightness(0.4);
+}
+
+.serviceTitle.card-title {
+  font-size: 40px;
+  color: var(--tertiary-color);
+  text-align: left;
+}
 
 
+
+
+.serviceTitle.card-title {
+  font-size: 40px;
+  color: var(--primary-color);
+  text-align: left;
+}
+
+#serviceLinkHoldr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  color: var(--primary-color);
+}
+
+#serviceLinkHoldr a {
+  font-size: 25px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+#serviceLinkHoldr a:hover {
+  font-size: 25px;
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
 
 
 /* footer */
@@ -246,6 +302,18 @@ footer a:hover {
 
   .ui.horizontal.segments.heroSegment {    padding: 0px;
 
+  }
+
+  .homeImage {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-left: none;
+  }
+
+  .homeImageContainer {
+    padding-right: .1px;
+    padding-left: .1px;
   }
 
  

@@ -14,6 +14,8 @@ import IntroBanner from "../components/general/IntroBanner"
 import BannerText from "../components/pages/Home/BannerText";
 import ImageTextSection from "../components/pages/Home/ImageTextSection"
 import ReviewCarousel from "../components/pages/Home/ReviewCarousel";
+import ServicesBanner from "../components/pages/Home/ServicesBanner";
+import MapPackage from "../components/pages/Home/MapPackage";
 
 
 
@@ -23,7 +25,9 @@ const Index = () => {
         <div>
              <HomeHero /> 
             <IntroBanner />
-            <ReviewCarousel/>
+            <TextImageSection/>
+            <ServicesBanner />
+            <MapPackage />
 
         </div>
     )

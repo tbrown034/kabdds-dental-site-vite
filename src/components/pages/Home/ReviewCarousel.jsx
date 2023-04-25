@@ -9,7 +9,7 @@ const ReviewCarousel = () => {
   
         <Carousel variant="light">
           {Reviews.map((review, index) => (
-            <Carousel.Item className="reviewHolder default-padding" key={index}>
+            <Carousel.Item className=" default-padding" key={index}>
               <p>
                 <Icon name="quote left" size="big" />
                 {review.review}
