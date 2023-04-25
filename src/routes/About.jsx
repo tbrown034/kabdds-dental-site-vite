@@ -10,7 +10,6 @@ const About = () => {
             <HomeHero /> 
             <IntroBanner />
             <ImageTextSection />
-            
             <BannerText />
             <TextImageSection />
             
