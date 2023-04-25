@@ -13,6 +13,7 @@ import TextImageSection from "../components/pages/Home/TextImageSection";
 import IntroBanner from "../components/general/IntroBanner"
 import BannerText from "../components/pages/Home/BannerText";
 import ImageTextSection from "../components/pages/Home/ImageTextSection"
+import ReviewCarousel from "../components/pages/Home/ReviewCarousel";
 
 
 
@@ -22,9 +23,8 @@ const Index = () => {
         <div>
              <HomeHero /> 
             <IntroBanner />
-            <ImageTextSection />
-            <BannerText />
-            <TextImageSection />
+            <ReviewCarousel/>
+
         </div>
     )
 

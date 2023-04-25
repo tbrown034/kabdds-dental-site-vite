@@ -9,9 +9,9 @@ const Contact = () => {
         <div>
             <HomeHero /> 
             <IntroBanner />
-            <ImageTextSection />
-            <BannerText />
             <TextImageSection />
+
+            
             
         </div>
     )
