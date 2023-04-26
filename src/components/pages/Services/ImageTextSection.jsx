@@ -1,28 +1,28 @@
 import React from "react";
 import { Row, Col, Container, Image } from "react-bootstrap";
-import dentist from "../../../assets/images/Keith2.jpeg"
+import dentist from "../../../assets/images/smile.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTooth } from "@fortawesome/free-solid-svg-icons";
+import { faMessage } from "@fortawesome/free-regular-svg-icons";
 
 const ImageTextSection = () => (
   <div className="default-padding tertiary-bg-color">
     <Container fluid>
       <Row>
-        <Col className="leftImageContainer default padding" lg="3" >
+        <Col className="leftImageContainer default padding" lg="3">
           <Image className="leftImage" fluid="lg" src={dentist} />
         </Col>
         <Col className="textBox default-padding">
-            <div className="center-text">
-          <h1 >Experience You Can Trust</h1>
-          <FontAwesomeIcon
-            icon={faTooth}
-            size="8x"
-            className="icon fa-bounce bounceIcon"
-            style={{
-              animationDuration: "2s",
-              animationIterationCount: "1",
-            }}
-          />
+          <div className="center-text">
+            <h1> Routine Cleanings, Cosmetic Procueres and More.</h1>
+            <FontAwesomeIcon
+              icon={faMessage}
+              size="8x"
+              className="center-text icon bounceIcon fa-bounce"
+              style={{
+                animationDuration: "2s",
+                animationIterationCount: "1",
+              }}
+            />
           </div>
           <p>
             Keith A. Brown DDS FAGD is an experienced dentist with over 42 years

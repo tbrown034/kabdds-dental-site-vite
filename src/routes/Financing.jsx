@@ -1,18 +1,15 @@
 import HomeHero from "../components/pages/Financing/HeroSection";
 import TextImageSection from "../components/pages/Financing/TextImageSection";
 import IntroBanner from "../components/general/IntroBanner"
-import BannerText from "../components/pages/Financing/BannerText";
-import ImageTextSection from "../components/pages/Financing/ImageTextSection"
+import FinancialPromo from "../components/pages/Financing/FinancePromo";
 
 const Financing = () => {
     return (
         <div>
             <HomeHero /> 
             <IntroBanner />
-            <ImageTextSection />
-            <BannerText />
             <TextImageSection />
-            
+            <FinancialPromo />
         </div>
     )
 

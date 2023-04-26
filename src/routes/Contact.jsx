@@ -1,8 +1,8 @@
 import HomeHero from "../components/pages/Contact/HeroSection";
 import TextImageSection from "../components/pages/Contact/TextImageSection";
 import IntroBanner from "../components/general/IntroBanner"
-import BannerText from "../components/pages/Contact/BannerText";
-import ImageTextSection from "../components/pages/Contact/ImageTextSection"
+import ContactForm from "../components/pages/Contact/ContactForm";
+
 
 const Contact = () => {
     return (
@@ -10,6 +10,7 @@ const Contact = () => {
             <HomeHero /> 
             <IntroBanner />
             <TextImageSection />
+            <ContactForm />
 
             
             

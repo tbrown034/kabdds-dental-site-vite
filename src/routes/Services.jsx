@@ -1,8 +1,7 @@
 import HomeHero from "../components/pages/Services/HeroSection";
-import TextImageSection from "../components/pages/Services/TextImageSection";
 import IntroBanner from "../components/general/IntroBanner"
-import BannerText from "../components/pages/Services/BannerText";
 import ImageTextSection from "../components/pages/Services/ImageTextSection"
+import ServicesBanner from "../../src/components/pages/Home/ServicesBanner"
 
 const Services = () => {
     return (
@@ -10,8 +9,7 @@ const Services = () => {
             <HomeHero /> 
             <IntroBanner />
             <ImageTextSection />
-            <BannerText />
-            <TextImageSection />
+           <ServicesBanner />
             
         </div>
     )

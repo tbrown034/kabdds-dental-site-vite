@@ -1,5 +1,6 @@
 import { Icon } from "semantic-ui-react";
 import Container from "react-bootstrap/Container";
+import Photo from "../../../assets/images/dentist2.jpeg"
 
 const BannerText = () => {
   return (
