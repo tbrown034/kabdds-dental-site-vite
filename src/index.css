@@ -223,6 +223,25 @@ button.ui.button {
   padding-right: 0
 }
 
+/* Carousel  */
+
+
+
+
+
+.carousel-item p {
+  font-size: 2em;
+  padding: 0em 3em 1em 3em;
+}
+
+.carousel-item {
+  margin-bottom: 3em;
+}
+
+
+
+
+
 /* Service Banner  */
 
 .cardPhoto {
