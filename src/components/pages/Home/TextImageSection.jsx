@@ -7,7 +7,7 @@ const TextImageSection = () => {
     <div className="secondary-bg-color" >
       <Container fluid>
         <Row>
-          <Col className= "default-padding" xl="8">
+          <Col className= "default-padding" xl="7">
            <ReviewCarousel />
           </Col>
           <Col className="homeImageContainer">

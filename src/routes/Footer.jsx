@@ -34,7 +34,7 @@ function Footer() {
       <Container fluid>
         <Row>
           <Col lg={3} xs={12} className="center-mobile-text">
-            <h5 className="underline">Connect With Us</h5>
+            <h4 className="underline">Connect With Us</h4>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />
               <Link to="/location">
@@ -65,7 +65,7 @@ function Footer() {
             </div>
           </Col>
           <Col lg={3} xs={12} className="center-mobile-text">
-            <h5 className="underline">Availability</h5>
+            <h4 className="underline">Availability</h4>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faCalendar} className="icon" />
               <p>Monday & Tuesday: 9 a.m. to 5 p.m.</p>
@@ -84,7 +84,7 @@ function Footer() {
             </div>
           </Col>
           <Col lg={3} xs={12} className="center-mobile-text">
-            <h5 className="underline">Dental Services</h5>
+            <h4 className="underline">Dental Services</h4>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faTooth} className="icon" />
               <Link to="/services">
@@ -111,7 +111,7 @@ function Footer() {
             </div>
           </Col>
           <Col lg={3} xs={12} className="center-mobile-text">
-            <h5 className="underline">Explore</h5>
+            <h4 className="underline">Explore</h4>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faUserDoctor} className="icon" />
               <Link to="/about">

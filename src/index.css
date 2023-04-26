@@ -11,7 +11,7 @@
   color: rgba(70, 26, 26, 0.87);
   --primary-color: #dce3e5;
   --secondary-color: #4c6575;
-  --tertiary-color: #4c6575;
+  --tertiary-color: #edf8ff;
   --quaternary-color: #042233;
   background-color: rgba(255, 255, 255, 0.87);
   --primary-bg-color: #dce3e5;
@@ -58,15 +58,10 @@
   }
 
 
+p {
+  font-size: larger;
+}
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
 
 h1 {
   font-size: 3.2em;
@@ -80,7 +75,7 @@ h1 {
 button.ui.button {
   border: var(--primary-color) solid 1.25px;
   background-color: var(--secondary-bg-color);
-  color: white;
+  color: var(--tertiary-color);
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
@@ -92,6 +87,7 @@ button.ui.button {
   
   button.ui.button:hover {
     background-color: var(--secondary-bg-color);
+  color: var(--tertiary-color);
   }
 
 
@@ -112,6 +108,13 @@ button.ui.button {
 
 .center-text {
   text-align: center;
+}
+
+.quote-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 /* General HeroSection CSS */
@@ -164,6 +167,29 @@ button.ui.button {
 .modal-footer .ui.button {
   margin-right: 10px;
 }
+
+.brand {
+  font-size: 1.75em;
+  color: var(--quad-color);
+}
+
+.header {
+  font-size: 1.5em;
+}
+
+.header-links {
+  color: var(--secondary-color);
+}
+
+.drop-down {
+  color: var(--secondary-color);
+;
+
+  
+}
+
+
+
 
 
 
@@ -229,9 +255,11 @@ button.ui.button {
 
 
 
+
+
 .carousel-item p {
   font-size: 2em;
-  padding: 0em 3em 1em 3em;
+  padding: 0em 2.7em 1em 2.7em;
 }
 
 .carousel-item {
@@ -239,6 +267,19 @@ button.ui.button {
 }
 
 
+
+
+.left-quote {
+  color: var(--tertiary-color); 
+  padding-right: 1.25em;
+  
+  /* Change this to the desired icon color */
+}
+
+.right-quote {
+  color: var(--tertiary-color);
+  padding-left: .2em;
+}
 
 
 
@@ -418,10 +459,7 @@ footer a:hover {
     margin-bottom: 10px;
   }
 
-  .btnGroup {
-    display: flex;
-    flex-wrap: wrap;
-  }
+
 
 
 

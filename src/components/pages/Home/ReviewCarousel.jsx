@@ -15,18 +15,18 @@ const ReviewCarousel = () => {
       >
         {Reviews.map((review, index) => (
           <Carousel.Item className="default-padding" key={index}>
-            <p>
-              <Icon name="quote left" size="big" />
-              {review.review}
-              {"  "}
-              <Icon name="quote right" size="big" />
-            </p>
-            <h5>{`- ${review.name}`}</h5>
-            <h5>{review.location}</h5>
-            <h5>
-              <Rating icon="star" defaultRating={review.rating} maxRating={5} />
-            </h5>
-          </Carousel.Item>
+          <p className="review-container">
+            <Icon name="quote left" size="big" className="left-quote" />
+            <span className="review-text">{review.review}</span>
+            <Icon name="quote right" size="big" className="right-quote" />
+          </p>
+          <h5>{`- ${review.name}`}</h5>
+          <h5>{review.location}</h5>
+          <h5>
+            <Rating icon="star" defaultRating={review.rating} maxRating={5} />
+          </h5>
+        </Carousel.Item>
+        
         ))}
       </Carousel>
     </div>

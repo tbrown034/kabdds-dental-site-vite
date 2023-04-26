@@ -15,41 +15,41 @@ const Header = () => {
       className="primary-bg-color myHeader"
       as="header"
     >
-      <Container>
-        <Navbar.Brand as={NavLink} to="/">
+      <Container fluid>
+        <Navbar.Brand className="brand" as={NavLink} to="/">
           Keith Brown DDS
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link as={NavLink} to="/about">
+          <Nav className="me-auto header">
+            <Nav.Link className="header-links" as={NavLink} to="/about">
               About
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/financing">
+            <Nav.Link  className="header-links" as={NavLink} to="/financing">
               Financing
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/location">
+            <Nav.Link className="header-links" as={NavLink} to="/location">
               Location
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/contact">
+            <Nav.Link className="header-links" as={NavLink} to="/contact">
               Contact
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/faqs">
+            <Nav.Link className="header-links" as={NavLink} to="/faqs">
               FAQs
             </Nav.Link>
-            <NavDropdown title="Dental Services" id="collasible-nav-dropdown">
-              <NavDropdown.Item as={NavLink} to="/services">
+            <NavDropdown className="header-links" title="Dental Services" id="collasible-nav-dropdown">
+              <NavDropdown.Item className="drop-down" as={NavLink} to="/services">
                 General Dentistry
               </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/services">
+              <NavDropdown.Item className="drop-down"  as={NavLink} to="/services">
                 Cosmetic Dentistry
               </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/services">
+              <NavDropdown.Item className="drop-down"  as={NavLink} to="/services">
                 Emergency/Surgical Dentistry
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item as={NavLink} to="/services/">
-                Separated link
+              <NavDropdown.Item className="drop-down"  as={NavLink} to="/services/">
+                All Services
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
