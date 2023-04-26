@@ -99,6 +99,14 @@ button.ui.button {
   padding: 2em;
 }
 
+.right-margin {
+  margin-right: 2em;
+}
+
+.left-margin {
+  margin-left: 2em;
+}
+
 
 
 
@@ -260,6 +268,24 @@ button.ui.button {
   text-decoration: underline;
 }
 
+/* Financing  */
+
+.Financecard {
+  background-color: var(--secondary-bg-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.careCredit {
+  margin-right: 25px;
+}
+
 
 /* footer */
 
@@ -297,6 +323,10 @@ footer a:hover {
 
 /* Media Query  */
 @media (max-width: 942px) {
+
+  .mobile-bottom-margin {
+    margin-bottom: 2em;
+  }
 
   /* Home */
 

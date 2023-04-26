@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import { Button, Checkbox, Form } from "semantic-ui-react";
+import { Button, Form } from "semantic-ui-react";
 
 const ContactForm = () => {
   return (
