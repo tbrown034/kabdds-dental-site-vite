@@ -68,6 +68,8 @@ h1 {
   line-height: 1.1;
 }
 
+
+
 .underline {
   text-decoration: underline;
 }
@@ -93,6 +95,14 @@ button.ui.button {
 
 .default-padding {
   padding: 2em;
+}
+
+.bottom-padding {
+  padding-bottom: 1em;
+}
+
+.top-padding {
+  padding-top: 1em;
 }
 
 .right-margin {
@@ -128,7 +138,7 @@ button.ui.button {
 
 .heroCard {
   object-fit: cover;
-  height: 60vh;
+  height: 50vh;
   filter: brightness(70%);
 }
 
@@ -259,7 +269,7 @@ button.ui.button {
 
 .carousel-item p {
   font-size: 2em;
-  padding: 0em 2.7em 1em 2.7em;
+  padding: 0em 3em 1em 3em;
 }
 
 .carousel-item {
@@ -382,10 +392,27 @@ footer a:hover {
 
 
 /* Media Query  */
-@media (max-width: 942px) {
+@media (max-width: 900px) {
 
   .mobile-bottom-margin {
     margin-bottom: 2em;
+  }
+  .mobile-bottom-padding {
+    padding-bottom: 2em;
+  }
+
+  .center-mobile-text {
+    text-align: center;
+  }
+
+  .btnGroup {
+    display: flex;
+    flex-direction: column;
+    padding: 0em 1em 0em 1em;
+  }
+
+  .btnGroup .ui.button {
+    margin-bottom: .5em;
   }
 
   /* Home */
@@ -406,6 +433,10 @@ footer a:hover {
     padding-left: .1px;
   }
 
+ .carousel-item p {
+  font-size: 2em;
+  padding: 0em 2em 2em 1em;
+}
  
 
   /* Footer  */

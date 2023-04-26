@@ -13,10 +13,10 @@ const MapPackage = () => {
       <div className="default-padding tertiary-bg-color ">
         <Container fluid>
           <Row>
-            <Col xl="8">
-              <Map  />
+            <Col className="leftImageContainer" xl="8">
+              <Map className="leftImage" />
             </Col>
-            <Col className="textBox">
+            <Col className="textBox mobile-bottom-padding">
               <h1>
               Located in the Heart of Napeville, IL.
               </h1>

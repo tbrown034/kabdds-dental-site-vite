@@ -8,7 +8,7 @@ const ImageTextSection = () => (
   <div className="default-padding tertiary-bg-color">
     <Container fluid>
       <Row>
-        <Col className="leftImageContainer default padding" lg="3" >
+        <Col className="leftImageContainer default-padding" lg="3" >
           <Image className="leftImage" fluid="lg" src={dentist} />
         </Col>
         <Col className="textBox default-padding">

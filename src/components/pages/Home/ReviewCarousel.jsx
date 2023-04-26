@@ -6,7 +6,7 @@ import { faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-s
 
 const ReviewCarousel = () => {
   return (
-    <div className="default-padding center-text secondary-bg-color primary-color">
+    <div className="center-text secondary-bg-color primary-color">
       <h1>Hear from our Patients</h1>
       <Carousel
         variant="light"
@@ -14,8 +14,8 @@ const ReviewCarousel = () => {
         nextIcon={<FontAwesomeIcon icon={faArrowCircleRight} size="3x" />}
       >
         {Reviews.map((review, index) => (
-          <Carousel.Item className="default-padding" key={index}>
-          <p className="review-container">
+          <Carousel.Item className="top-padding" key={index}>
+          <p >
             <Icon name="quote left" size="big" className="left-quote" />
             <span className="review-text">{review.review}</span>
             <Icon name="quote right" size="big" className="right-quote" />

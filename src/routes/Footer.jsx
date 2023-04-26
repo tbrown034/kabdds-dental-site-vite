@@ -32,10 +32,10 @@ function Footer() {
   return (
     <footer className="primary-bg-color default-padding">
       <Container fluid>
-        <Row>
-          <Col lg={3} xs={12} className="center-mobile-text">
-            <h4 className="underline">Connect With Us</h4>
-            <div className="icon-and-text">
+        <Row >
+          <Col lg={3} xs={12} className="mobile-bottom-padding">
+            <h4 className="underline  ">Connect With Us</h4>
+            <div className="icon-and-text ">
               <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />
               <Link to="/location">
                 <p>1295 Rickert Drive, Naperville, IL 60564</p>
@@ -64,7 +64,7 @@ function Footer() {
               </a>
             </div>
           </Col>
-          <Col lg={3} xs={12} className="center-mobile-text">
+          <Col lg={3} xs={12} className="mobile-bottom-padding">
             <h4 className="underline">Availability</h4>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faCalendar} className="icon" />
@@ -83,7 +83,7 @@ function Footer() {
               <p> Weekends: 5 p.m. to 9 p.m.</p>
             </div>
           </Col>
-          <Col lg={3} xs={12} className="center-mobile-text">
+          <Col lg={3} xs={12} className="mobile-bottom-padding">
             <h4 className="underline">Dental Services</h4>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faTooth} className="icon" />
@@ -110,7 +110,7 @@ function Footer() {
               </Link>
             </div>
           </Col>
-          <Col lg={3} xs={12} className="center-mobile-text">
+          <Col lg={3} xs={12} className="mobile-bottom-padding">
             <h4 className="underline">Explore</h4>
             <div className="icon-and-text">
               <FontAwesomeIcon icon={faUserDoctor} className="icon" />
