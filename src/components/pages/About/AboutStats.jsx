@@ -2,11 +2,11 @@ import React from "react";
 import { Icon, Statistic } from "semantic-ui-react";
 
 const Statistics = () => (
-  <div className="myStats quote-card center-text">
+  <div className="default-padding secondary-bg-color primary-color round-box center-text stats-holder">
     <h2>'Not Every Dentist Does This'</h2>
-    <Statistic.Group className="statGroup">
+    <Statistic.Group >
       <Statistic>
-        <Statistic.Value>6%</Statistic.Value>
+        <Statistic.Value className="center-text statisticValue"> 6%</Statistic.Value>
         <Statistic.Label>Of U.S. Dentists become a Fellow</Statistic.Label>
       </Statistic>
       <Statistic>

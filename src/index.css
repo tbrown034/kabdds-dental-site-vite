@@ -26,6 +26,8 @@
   --tertiary-font: "Montserrat", sans-serif;
 }
 
+
+
 /* Main Styles */ 
 .primary-bg-color {
   background-color: var(--primary-bg-color) !important;
@@ -66,6 +68,14 @@ p {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+.long-hyphen {
+  display: inline-block;
+  width: 50px; /* Adjust the length of the hyphen */
+  height: 2px; /* Adjust the thickness of the hyphen */
+  background-color: var(--primary-bg-color); /* Change the color of the hyphen */
+  margin: 0 8px; /* Adjust margin for spacing around the hyphen */
 }
 
 
@@ -113,18 +123,29 @@ button.ui.button {
   margin-left: 2em;
 }
 
-
+.round-box {
+  border-radius: 10px;
+}
 
 
 .center-text {
   text-align: center;
 }
 
-.quote-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+.statsColumn {
+  width: 100%;
+  height: 100%;
+}
+
+/* Statistics.module.css */
+.statisticValue {
+  /* Add your custom styles for Statistic.Value here */
+  color: red;
+}
+
+.statisticLabel {
+  /* Add your custom styles for Statistic.Label here */
+  color: blue;
 }
 
 /* General HeroSection CSS */
@@ -338,6 +359,20 @@ button.ui.button {
   text-decoration: underline;
 }
 
+
+/* About */
+
+.logo-quote {
+  max-width: 40%;
+
+}
+
+.quote-card {
+  border-radius: 10px;
+
+}
+
+.attributio
 /* Financing  */
 
 .Financecard {
@@ -388,146 +423,5 @@ footer a:hover {
   color: #0056b3;
 }
 
-
-
-
-/* Media Query  */
-@media (max-width: 900px) {
-
-  .mobile-bottom-margin {
-    margin-bottom: 2em;
-  }
-  .mobile-bottom-padding {
-    padding-bottom: 2em;
-  }
-
-  .center-mobile-text {
-    text-align: center;
-  }
-
-  .btnGroup {
-    display: flex;
-    flex-direction: column;
-    padding: 0em 1em 0em 1em;
-  }
-
-  .btnGroup .ui.button {
-    margin-bottom: .5em;
-  }
-
-  /* Home */
-
-  .ui.horizontal.segments.heroSegment {    padding: 0px;
-
-  }
-
-  .homeImage {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    border-left: none;
-  }
-
-  .homeImageContainer {
-    padding-right: .1px;
-    padding-left: .1px;
-  }
-
- .carousel-item p {
-  font-size: 2em;
-  padding: 0em 2em 2em 1em;
-}
- 
-
-  /* Footer  */
-
-  .myApt h1 {
-    font-size: 40px;
-  }
-
-  .myFooter p {
-    font-size: 15px;
-  }
-
-  .footerCols {
-    padding-bottom: 20px;
-  }
-
-  /* 
-  Finance  */
-
-  .careCredit {
-    margin-bottom: 25px;
-  }
-
-
-
-
-
-
-
-
-
-
-  .experience {
-    padding-top: 20px;
-  }
-
-  .myStats {
-    margin-top: 10px;
-  }
-
-  .myMapPackage .myH2 {
-    padding-bottom: 10px;
-  }
-
-  .threeBtnGroup {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .threeBtnGroup>.ui.button {
-    margin-bottom: 10px;
-  }
-
-
-
-
-
-  .apptBtn {
-    margin-bottom: 10px;
-  }
-
-  .heroTitle.card-title {
-    font-size: 40px;
-  }
-
-  .card-text {
-    font-size: 20px;
-  }
-
-
-  /* TextImageSections and ImageText Sections*/
-
-  .leftImageContainer {
-    min-width: 1px;
-    padding: 0px 0px 20px 0px;
-  }
-
-  .rightImageContainer {
-    min-width: 1px;
-    padding: 20px 0px 0px 0px;
-  }
-  .leftImage {
-    padding: 0px;
-  
-  }
-
-  .rightImage {
-    padding: 0px;
-    ;
-
-  }
-}
 
 

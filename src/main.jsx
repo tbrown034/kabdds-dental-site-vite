@@ -8,6 +8,7 @@ import { Loader } from "@googlemaps/js-api-loader"
 import 'semantic-ui-css/semantic.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
+import './indexMobile.css'
 import Index from "./routes/index";
 import ErrorPage from "./error-page";
 import { Location, About, Faqs, Financing, Root, Services, Contact, Appointment } from "./routes";

@@ -1,0 +1,173 @@
+:root {
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  /* Color Themes */
+  color: rgba(70, 26, 26, 0.87);
+  --primary-color: #dce3e5;
+  --secondary-color: #4c6575;
+  --tertiary-color: #edf8ff;
+  --quaternary-color: #042233;
+  background-color: rgba(255, 255, 255, 0.87);
+  --primary-bg-color: #dce3e5;
+  --secondary-bg-color: #4d6777;
+  --tertiary-bg-color: #f8fcfd;
+  --quaternary-bg-color: #dfe7ec;
+
+  /* Font Themes  */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --primary-font: "Lato", sans-serif;
+  --secondary-font: "Roboto Slab", serif;
+  --tertiary-font: "Montserrat", sans-serif;
+}
+
+
+
+/* Media Query  */
+@media (max-width: 900px) {
+
+  .mobile-bottom-margin {
+    margin-bottom: 2em;
+  }
+  .mobile-bottom-padding {
+    padding-bottom: 2em;
+  }
+
+  .center-mobile-text {
+    text-align: center;
+  }
+
+  .btnGroup {
+    display: flex;
+    flex-direction: column;
+    padding: 0em 1em 0em 1em;
+  }
+
+  .btnGroup .ui.button {
+    margin-bottom: .5em;
+  }
+
+  /* Home */
+
+  .ui.horizontal.segments.heroSegment {    padding: 0px;
+
+  }
+
+  .homeImage {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-left: none;
+  }
+
+  .homeImageContainer {
+    padding-right: .1px;
+    padding-left: .1px;
+  }
+
+ .carousel-item p {
+  font-size: 2em;
+  padding: 0em 2em 2em 1em;
+}
+ 
+
+  /* Footer  */
+
+  .myApt h1 {
+    font-size: 40px;
+  }
+
+  .myFooter p {
+    font-size: 15px;
+  }
+
+  .footerCols {
+    padding-bottom: 20px;
+  }
+
+  /* 
+  Finance  */
+
+  .careCredit {
+    margin-bottom: 25px;
+  }
+
+
+
+
+
+
+
+
+
+
+  .experience {
+    padding-top: 20px;
+  }
+
+  .myStats {
+    margin-top: 10px;
+  }
+
+  .statsHolder {
+    height: 100%;
+    width: 100%;
+  }
+
+  .myMapPackage .myH2 {
+    padding-bottom: 10px;
+  }
+
+  .threeBtnGroup {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .threeBtnGroup>.ui.button {
+    margin-bottom: 10px;
+  }
+
+
+
+  .apptBtn {
+    margin-bottom: 10px;
+  }
+
+  .heroTitle.card-title {
+    font-size: 40px;
+  }
+
+  .card-text {
+    font-size: 20px;
+  }
+
+
+  /* TextImageSections and ImageText Sections*/
+
+  .leftImageContainer {
+    min-width: 1px;
+    padding: 0px 0px 20px 0px;
+  }
+
+  .rightImageContainer {
+    min-width: 1px;
+    padding: 20px 0px 0px 0px;
+  }
+  .leftImage {
+    padding: 0px;
+  
+  }
+
+  .rightImage {
+    padding: 0px;
+    ;
+
+  }
+}
+
+
