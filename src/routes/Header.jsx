@@ -15,7 +15,7 @@ const Header = () => {
       className="primary-bg-color myHeader"
       as="header"
     >
-      <Container fluid>
+      <Container >
         <Navbar.Brand className="brand" as={NavLink} to="/">
           Keith Brown DDS
         </Navbar.Brand>
