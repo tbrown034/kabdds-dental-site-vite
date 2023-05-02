@@ -18,12 +18,16 @@ const CallButton = () => {
 
   return (
     <>
-      <Button onClick={handleShow} animated="vertical" >
-        <Button.Content hidden>Call Us</Button.Content>
-        <Button.Content visible>
-          <Icon name="phone" />
-        </Button.Content>
-      </Button>
+      <Button animated onClick={handleShow} className="myButton">
+              <Button.Content visible>
+                <Icon name="phone" /> 
+                <span className="call-text">Call us Now</span> {/* Add the call-text class */}
+
+              </Button.Content>
+              <Button.Content hidden>
+                <Icon name="arrow right" />
+              </Button.Content>
+            </Button>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Ready to Call?</Modal.Title>

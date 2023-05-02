@@ -2,6 +2,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import Map from "../../general/Map"
 import { Button, Icon } from "semantic-ui-react";
 import CopyAddress from "../../buttons/CopyAddress";
+import DirectionButton from "../../buttons/DirectionButton";
+
 import { Link } from "react-router-dom";
 
 
@@ -26,14 +28,9 @@ const MapPackage = () => {
                 past 30 years. Come visit us!{" "}
               </p>
               <div className="btnGroup center-text">
-                <Button animated>
-                  <Button.Content visible>
-                    <Icon name="world" /> Get Directions
-                  </Button.Content>
-                  <Button.Content hidden>
-                    <Icon name="car" />
-                  </Button.Content>
-                </Button>
+                <DirectionButton/>
+       
+
                 <CopyAddress address={myAddress} />
                 <Link to="/location">
                 <Button animated>

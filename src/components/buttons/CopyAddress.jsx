@@ -6,7 +6,7 @@ const CopyAddress = ({ address, className }) => {
   };
 
   return (
-    <Button className="wideButton" onClick={handleCopy} animated>
+    <Button  onClick={handleCopy} animated>
       <Button.Content visible>
         <Icon name="copy" />
         Copy Address

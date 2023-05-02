@@ -12,10 +12,9 @@ const Header = () => {
       collapseOnSelect
       expand="lg"
       variant="light"
-      className="primary-bg-color myHeader"
-      as="header"
+      className="primary-bg-color"
     >
-      <Container >
+      <Container fluid className="side-padding">
         <Navbar.Brand className="brand" as={NavLink} to="/">
           Keith Brown DDS
         </Navbar.Brand>
@@ -54,8 +53,8 @@ const Header = () => {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Link to="/appointment">
-            <Button animated className="myButton">
+            <Link  to="/appointment">
+            <Button animated className="link-button">
               <Button.Content visible>
                 <Icon name="calendar" /> Make an Appointment
               </Button.Content>

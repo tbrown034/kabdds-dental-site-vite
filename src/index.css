@@ -96,12 +96,46 @@ button.ui.button {
   cursor: pointer;
 
   }
+
+  .direction-button {
+    background-color: var(--secondary-bg-color) !important;
+  color: var(--tertiary-color) !important;
+  padding: 10px 20px !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  border-radius: 5px !important;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  }
   
   button.ui.button:hover {
     background-color: var(--secondary-bg-color);
   color: var(--tertiary-color);
   }
 
+  .link-button {
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 99.3%;
+  }
+
+.call-text {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .call-text {
+    display: inline;
+  }
+}
+
+
+
+
+ 
 
 .default-padding {
   padding: 2em;
@@ -123,6 +157,10 @@ button.ui.button {
   margin-left: 2em;
 }
 
+.side-padding {
+  padding: 0 2em 0 2em;
+}
+
 .round-box {
   border-radius: 10px;
 }
@@ -136,6 +174,10 @@ button.ui.button {
   width: 100%;
   height: 100%;
 }
+
+
+
+
 
 /* Statistics.module.css */
 .statisticValue {
