@@ -1,7 +1,7 @@
 import { Button, Icon } from "semantic-ui-react";
 
 const CopyPhoneButton = () => {
-  const phoneNumber = "tel:5553010589"
+  const phoneNumber = "555-630-0589"
   const handleCopy = () => {
     navigator.clipboard.writeText(phoneNumber);
   };
