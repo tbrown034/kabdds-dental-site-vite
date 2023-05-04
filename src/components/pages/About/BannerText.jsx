@@ -3,8 +3,8 @@ import Container from "react-bootstrap/Container";
 
 const BannerText = () => {
   return (
-    <div className="default-padding center-text secondary-bg-color primary-color" >
-      <Container fluid>
+    <div className="default-padding center-text tertiary-bg-color quad-color" >
+      <Container fluid className="primary-bg-color default-padding">
         <h1>Our Dental Philosophy</h1>
         <p>
           <Icon name="quote left" size="big" className="left-quote" />
@@ -20,7 +20,7 @@ const BannerText = () => {
           is most important to me, and I will go out of my way to make sure that
           you feel at home in my office. <Icon name="quote right" size="big" className="right-quote" />
         </p>
-        <p className="signature">- Dr. Keith Brown, D.D.S. F.A.G.C</p>
+        <p className="italics">- Dr. Keith Brown, D.D.S. F.A.G.C</p>
       </Container>
     </div>
   );

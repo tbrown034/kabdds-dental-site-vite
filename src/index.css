@@ -64,6 +64,10 @@ p {
   font-size: larger;
 }
 
+.italics {
+  font-style: italic;
+}
+
 
 h1 {
   font-size: 3.2em;
@@ -170,9 +174,12 @@ button.ui.button {
   text-align: center;
 }
 
-.statsColumn {
-  width: 100%;
-  height: 100%;
+
+
+.statGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
@@ -409,12 +416,38 @@ button.ui.button {
 
 }
 
+.source-holder {
+  display: flex;
+  flex-direction: row;
+}
+
+.myLogos {
+  padding: 100px 25px 100px 25px;
+}
+
 .quote-card {
   border-radius: 10px;
 
 }
 
-.attributio
+.logoImage {
+  width: 100%;
+  height: auto;
+  max-height: 100px;
+  /* adjust this value to change the size of the images */
+  object-fit: contain;
+  padding: 10px;
+}
+
+.logoGroup {
+  display: flex;
+  justify-content: center;
+  /* Horizontally center images */
+  align-items: center;
+  /* Vertically center images */
+  flex-wrap: wrap;
+  /* Allow wrapping on smaller screens */
+}
 /* Financing  */
 
 .Financecard {

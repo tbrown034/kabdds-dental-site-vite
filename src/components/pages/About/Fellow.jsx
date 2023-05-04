@@ -1,14 +1,14 @@
 import { Icon } from "semantic-ui-react";
 import Stats from "./AboutStats";
 import AGD from "../../../assets/images/AGD.png"
-import { Row, Col, Container, Image } from "react-bootstrap";
+import { Row, Col, Container, Image, Card } from "react-bootstrap";
 
 
 
 
 
 const Fellow = () => (
-  <div className="default-padding primary-bg-color">
+  <div className="default-padding tertiary-bg-color">
     <Container fluid>
       <Row>
         <Col lg="8">
@@ -20,9 +20,10 @@ const Fellow = () => (
             We think that's pretty cool, but don't take our word for it. Here is
             what the Academy of General Dentistry has to say about that:
           </p>
-          <div className="default-padding secondary-bg-color center-text round-box">
-            <p className="primary-color">
-              <Icon name="quote left" size="big" className="left-quote" />
+          <Card className="default-padding secondary-bg-color center-text round-box">
+            <Card.Body className="primary-color">
+            <p>  <Icon name="quote left" size="big" className="left-quote" />
+            
               If your dentist is a Fellow or Master of the Academy of General
               Dentistry (FAGD or MAGD), they are the best of the best in the
               field. You can rest assured that your dentist cares about knowing
@@ -30,17 +31,26 @@ const Fellow = () => (
               dentist practices these techniques in a classroom setting multiple
               times a year — not every dentist does this.
               <Icon name="quote right" size="big" className="right-quote" />
-            </p>
-            <span className="long-hyphen-container">
-          <span className="long-hyphen"></span>
-        </span>
-
-              <Image fluid="md" className="logo-quote default-padding" src={AGD} />
+              </p>
+            </Card.Body>
+            <hr style={{ width: '50%', margin: '10px auto' }} />
+            <h4 className="primary-color italics" style={{ marginBottom: '10px' }}>Source:</h4>
+            <div style={{ display: 'flex', justifyContent: 'center', paddingBottom: '10px' }}>
+              <Card.Img variant="bottom" className="logo-quote center-text" src={AGD} />
             </div>
+          </Card>
        
         </Col>
-        <Col className="statsColumn">
-          <Stats className="statsHolder" />
+        <Col>
+        <Card className="default-padding secondary-bg-color center-text round-box">
+            <Card.Body className="primary-color">
+              <Stats />
+              
+              
+              
+            </Card.Body>
+
+          </Card>
         </Col>
       </Row>
     </Container>
