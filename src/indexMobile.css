@@ -1,30 +1,3 @@
-:root {
-  color-scheme: light dark;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  /* Color Themes */
-  color: rgba(70, 26, 26, 0.87);
-  --primary-color: #dce3e5;
-  --secondary-color: #4c6575;
-  --tertiary-color: #edf8ff;
-  --quaternary-color: #042233;
-  background-color: rgba(255, 255, 255, 0.87);
-  --primary-bg-color: #dce3e5;
-  --secondary-bg-color: #4d6777;
-  --tertiary-bg-color: #f8fcfd;
-  --quaternary-bg-color: #dfe7ec;
-
-  /* Font Themes  */
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  --primary-font: "Lato", sans-serif;
-  --secondary-font: "Roboto Slab", serif;
-  --tertiary-font: "Montserrat", sans-serif;
-}
 
 
 
@@ -75,6 +48,12 @@
   padding: 0em 2em 2em 1em;
 }
  
+
+/* About  */
+
+.mobileDYK {
+  margin-top: 1em;
+}
 
   /* Footer  */
 

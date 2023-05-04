@@ -15,7 +15,7 @@
   --quaternary-color: #042233;
   background-color: rgba(255, 255, 255, 0.87);
   --primary-bg-color: #dce3e5;
-  --secondary-bg-color: #4d6777;
+  --secondary-bg-color: #547082;
   --tertiary-bg-color: #f8fcfd;
   --quaternary-bg-color: #dfe7ec;
 
@@ -416,10 +416,20 @@ button.ui.button {
 
 }
 
-.source-holder {
+.myStats {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--tertiary-bg-color);
+  padding: 20px;
 }
+
+.DYK {
+  height: 100%;
+}
+
 
 .myLogos {
   padding: 100px 25px 100px 25px;
